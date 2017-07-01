@@ -32,7 +32,7 @@ app.use(function(req, res, next){
 });
 
 app.use('/news', newsRouter);
-app.use('/games', newsRouter);
+app.use('/games', gamesRouter);
 
 app.get('/', function(request, response) {
 	response.render('pages/index');
