@@ -6,6 +6,7 @@ var mongoose = require('mongoose');
 var newsRouter = require('./routes/news');
 var gamesRouter = require('./routes/games');
 var trailersRouter = require('./routes/trailers');
+var articlesRouter = require('./routes/articles');
 
 mongoose.connect('mongodb://heroku_6q05xjb0:aeamao92plaq974hja2nbhdhs5@ds145292.mlab.com:45292/heroku_6q05xjb0');
 
@@ -35,6 +36,7 @@ app.use(function(req, res, next){
 app.use('/news', newsRouter);
 app.use('/games', gamesRouter);
 app.use('/trailers', trailersRouter);
+app.use('/articles', articlesRouter);
 
 app.get('/', function(request, response) {
 	response.render('pages/index');
