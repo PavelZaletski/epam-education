@@ -1,5 +1,6 @@
 'use strict';
 
 module.exports = {
-	'News': require('./news')
+	'News': require('./news'),
+	'Games': require('./games')
 };
