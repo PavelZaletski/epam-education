@@ -2,5 +2,6 @@
 
 module.exports = {
 	'News': require('./news'),
-	'Games': require('./games')
+	'Games': require('./games'),
+	'Trailers': require('./trailers')
 };
